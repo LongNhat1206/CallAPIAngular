@@ -1,0 +1,30 @@
+
+<div class="container my-5">
+    <h1>Employees</h1>
+    <table class="table" *ngIf="employees">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Department</th>
+            <th scope="col">fafafafaf</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of employees ; let i = index">
+            <td>{{item.id}}</td>
+            <td>{{item.cityID}}</td>
+            <td>{{item.DistrictID}}</td>
+            <td>{{item.fullname}}</td>
+            <td>{{item.UserName}}</td>
+            <td>{{item.ShopName}}</td>
+            <td>{{item.Email}}</td>
+            <td>{{item.Gender}}</td>
+            <td>{{item.dateCreated}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
